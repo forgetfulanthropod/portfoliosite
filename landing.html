@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Charlie Miles</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+	<script src="scripts/jquery-2.1.1.min.js" type="text/javascript"></script> 
+  <!-- JavaScript -->
+  <script src="scripts/wufoo.js"></script>
+  <!--[if lt IE 10]>
+  <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+	<script type="text/javascript">
+		//code below hijacks nav links for smooth scrolling
+    $(document).ready(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    //code below hides upward nav arrow
+    $(document).scroll(function() {
+      if (window.pageYOffset > $(window).height()) {
+        $('#up_arrow').css('display','block');
+      }
+      else {
+        $('#up_arrow').css('display','none');
+      }
+    });
+	</script>
+</head>
+<body>
+  <div id="nav">
+    <ul>
+      <li>
+        <a href="#work">
+          <button>
+            <h2>Work</h2>
+          </button>
+        </a>
+      </li> 
+      <li>
+        <a href="#about">
+          <button>
+            <h2>About</h2>
+          </button>
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <button>
+            <h2>Contact</h2>
+          </button>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <a href="#landing" id="up_arrow"> 
+    <button>
+      <p><h2>TOP</h2></p>
+    </button>
+  </a>
+  <div id="fungroup">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <div id="title">
+      <h1>Hi, my name is Charlie.</h1>
+      <h2>I am a front-end web developer based in Los Angeles.</h2>
+    </div>
+    <a href="#contact">
+      <button><h2>Hire Charlie</h2></button>
+    </a>
+  </div>
+  <div id="landing">
+  </div>
+  <hr/>
+  <div id="work">
+    <div class="content">
+      <ul>
+        <dl>
+          <li>
+              <h1>Technologies</h1>
+          </li>
+          <li>CSS3, HTML5</li>
+          <li>Javascript</li>
+          <li>SASS</li>
+          <li>JQuery</li>
+          <li>Wordpress</li>
+          <li>Tumblr</li>
+          <li>Twitter Bootstrap</li>
+          <li>SVG w/ Inkscape</li>
+          <li>Photoshop Elements</li>
+          <li>Tumblr Theme Link Coming Soon...</li>
+        </dl>
+      </ul>
+    </div>
+  </div>
+  <hr/>
+  <div id="about">
+    <div class="content">
+      <article>
+        <img alt="Map of US with places I've lived marked on it - cities of the U.S. including L.A. and N.Y.C." src="images/map2.svg"/>
+        <blockquote>
+          <h1>I've been moving around a bit for the past few years...</h1>
+          <p>Just a bit about my own experience in each state, respectively - horses, hiking, baseball, rooftops, beach, traffic. Ahh.</p>
+        </blockquote>
+
+      </article>
+    </div>
+  </div>
+  <hr/>
+  <div id="contact">
+    <div class="content">
+      <div id="wufoo-z1gfvkow0wrjdaa">
+        Fill out my <a href="https://charliecmiles.wufoo.com/forms/z1gfvkow0wrjdaa">online form</a>.
+        </div>
+        <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#green;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
+        <script type="text/javascript">var z1gfvkow0wrjdaa;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'charliecmiles',
+        'formHash':'z1gfvkow0wrjdaa',
+        'autoResize':true,
+        'height':'659',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'show',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { z1gfvkow0wrjdaa = new WufooForm();z1gfvkow0wrjdaa.initialize(options);z1gfvkow0wrjdaa.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');
+        </script>
+    </div>
+  </div>
+</body>
+</html>
