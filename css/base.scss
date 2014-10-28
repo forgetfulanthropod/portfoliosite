@@ -8,9 +8,7 @@ $hover-color: rgba(184, 201, 217, .85);
 $but-hov-time: .15s;
 $hover-darken: 15%;
 
-//'winter_in_gotham'
-//@import 'winter_in_gotham.css';
-@import 'Hollywood.css';
+@import 'hollywood.css';
 
 @mixin transform($transform) {
   -webkit-transform: $transform;
