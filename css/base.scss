@@ -9,7 +9,8 @@ $but-hov-time: .15s;
 $hover-darken: 15%;
 
 //'winter_in_gotham'
-@import 'winter_in_gotham.css';
+//@import 'winter_in_gotham.css';
+@import 'Hollywood.css';
 
 @mixin transform($transform) {
   -webkit-transform: $transform;
@@ -25,6 +26,16 @@ $hover-darken: 15%;
   -webkit-border-radius: $radius;
           border-radius: $radius;
 }
+@mixin selection($bg,$color) {
+  &::selection {
+    background: $bg; /* WebKit/Blink Browsers */
+    color: $color;
+  }
+  &::-moz-selection {
+    background: $bg; /* Gecko Browsers */
+    color: $color;
+  }
+}
 @mixin page-div{
   width:100vw;
   height:$window-height;
@@ -33,6 +44,15 @@ $hover-darken: 15%;
   vertical-align:middle;
   text-align:center;
   overflow:auto;
+}
+@mixin noselect {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;  
 }
 body {
   color: $main-color;
@@ -44,12 +64,19 @@ body {
     border:none;
     background:$button-color;
     @include transition($but-hov-time);
+    @include noselect;
+    &>* {
+      @include noselect;
+    }
   }
   button:hover {
     background:$hover-color;
   }
   button:focus {
     outline:none;
+  }
+  h1, h2, h3, li, p {
+    @include selection($main-color,$main-bg-color);
   }
   h1 {
     font-weight:lighter;
@@ -107,7 +134,8 @@ body {
       background:$main-bg-color;
       opacity: .2;
       &:last-of-type {
-        background-color:rgba(51, 153, 255, .8);
+        opacity:.6;
+        background-color:rgba(206, 83, 36, 1);
         @include border-radius(35vw / 2);
       }
     }
@@ -127,11 +155,16 @@ body {
       min-width:$fungroup-square-min - 50px;
       width:33vw;
       @include transform(translate(-50%,-60%));
-      p {
-        font-family:'winter_in_gotham';
-        font-size:7vw;
-        margin:0 0 -55px 0;
-        line-height:1.3;
+      p#name_for_title {
+        font-family: Hollywood;
+        font-size: 9vw;
+        color:white;
+        letter-spacing: .6vw;
+        line-height: 1;
+        margin: 0;
+      }
+      h1,h2 {
+        margin:0;
       }
     }
     button {
