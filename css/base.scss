@@ -128,13 +128,16 @@ body {
       min-width:$fungroup-square-min; min-height:$fungroup-square-min;
       @include transition(3s);
       left:0; top:0; right:0; bottom:0;
-      border:.25vw solid #444;
+      border:.25vw solid $main-color;
       background:$main-bg-color;
-      opacity: .2;
+      opacity: .15;
       &:last-of-type {
-        opacity:.6;
-        background-color:rgba(206, 83, 36, 1);
+        opacity:.5;
+        background-color: $main-color;
         @include border-radius(35vw / 2);
+        button {
+          color:white;
+        }
       }
     }
     @for $i from 1 through 9 {
@@ -146,6 +149,7 @@ body {
       }
     }
     #title {
+      color:white;
       position:absolute;
       text-align: center;
       left:50%;

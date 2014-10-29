@@ -95,15 +95,17 @@ body {
       top: 0;
       right: 0;
       bottom: 0;
-      border: .25vw solid #444;
+      border: 0.25vw solid #333;
       background: #eee;
-      opacity: .2; }
+      opacity: .15; }
       body div#fungroup span:last-of-type {
-        opacity: .6;
-        background-color: #ce5324;
+        opacity: .5;
+        background-color: #333;
         -moz-border-radius: 17.5vw;
         -webkit-border-radius: 17.5vw;
         border-radius: 17.5vw; }
+        body div#fungroup span:last-of-type button {
+          color: white; }
     body div#fungroup > span:nth-child(1) {
       -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
@@ -177,6 +179,7 @@ body {
       -ms-transform: rotate(90deg);
       transform: rotate(90deg); }
     body div#fungroup #title {
+      color: white;
       position: absolute;
       text-align: center;
       left: 50%;
