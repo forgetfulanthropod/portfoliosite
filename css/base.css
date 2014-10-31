@@ -5,6 +5,9 @@ body {
   font-family: "Raleway", arial;
   background-color: #eee;
   margin: 0; }
+  body a, body a :hover {
+    text-decoration: none;
+    color: #333; }
   body button {
     font-family: "Raleway", arial;
     border: none;
@@ -57,8 +60,23 @@ body {
     left: 0;
     top: 30vh;
     z-index: 1; }
+    @media only screen and (max-width: 750px) {
+      body #nav {
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%); } }
+    @media only screen and (max-width: 750px) {
+      body #nav ul {
+        white-space: nowrap;
+        margin: 0; } }
     body #nav li {
       margin: 0 0 5px 0; }
+      @media only screen and (max-width: 750px) {
+        body #nav li {
+          display: inline-block;
+          margin: 0 5px; } }
       body #nav li button {
         position: relative;
         min-width: 85px; }
@@ -75,6 +93,9 @@ body {
         transition: 0.15s; }
       body #nav li:hover button::after {
         border-left: 20px solid #b8c9d9; }
+        @media only screen and (max-width: 750px) {
+          body #nav li:hover button::after {
+            border: none; } }
   body #fungroup {
     position: absolute;
     left: 31.5vw;
@@ -83,6 +104,12 @@ body {
     height: 36vw;
     min-width: calc($fungroup-square-min + 1vw);
     min-height: calc($fungroup-square-min + 1vw); }
+    @media only screen and (max-width: 750px) {
+      body #fungroup {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 600px; } }
     body #fungroup span {
       position: absolute;
       width: 35vw;
@@ -99,6 +126,9 @@ body {
       border: 0.25vw solid #333;
       background: #eee;
       opacity: .15; }
+      @media only screen and (max-width: 750px) {
+        body #fungroup span {
+          display: none; } }
       body #fungroup span:last-of-type {
         opacity: .5;
         background-color: #333;
@@ -186,10 +216,13 @@ body {
       left: 50%;
       top: 50%;
       min-width: 300px;
-      width: 33vw;
+      width: 32vw;
       -webkit-transform: translate(-50%, -60%);
       -ms-transform: translate(-50%, -60%);
       transform: translate(-50%, -60%); }
+      @media only screen and (max-width: 750px) {
+        body #fungroup #title {
+          width: 80vw; } }
       body #fungroup #title p#name_for_title {
         font-family: Hollywood;
         font-size: 9vw;
@@ -197,6 +230,9 @@ body {
         letter-spacing: .6vw;
         line-height: 1;
         margin: 0; }
+        @media only screen and (max-width: 750px) {
+          body #fungroup #title p#name_for_title {
+            font-size: 22vw; } }
       body #fungroup #title h1, body #fungroup #title h2 {
         margin: 0; }
     body #fungroup button {
@@ -209,19 +245,29 @@ body {
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       width: 11vw;
-      min-width: 90px;
+      min-width: 120px;
       height: 3.6vw;
-      min-height: 30px;
+      min-height: 60px;
       background-color: #333;
       -webkit-transition: 2s;
       /* For Safari 3.1 to 6.0 */
       transition: 2s;
       opacity: 0; }
+      @media only screen and (max-width: 750px) {
+        body #fungroup button {
+          opacity: 1;
+          background-color: #2dae7b;
+          height: auto; } }
       body #fungroup button:hover {
         -webkit-transition: 0.15s;
         /* For Safari 3.1 to 6.0 */
         transition: 0.15s;
         background-color: #0d0d0d; }
+        body #fungroup button:hover h2 {
+          color: white; }
+        @media only screen and (max-width: 750px) {
+          body #fungroup button:hover {
+            background-color: #1d7150; } }
     body #fungroup:hover button {
       opacity: 1; }
   body .content {
@@ -240,6 +286,10 @@ body {
     overflow: auto;
     background: url("../images/hw-bg.jpg");
     background-size: cover; }
+    @media only screen and (max-width: 750px) {
+      body #landing {
+        height: 600px;
+        background: #666666; } }
   body #work {
     width: 100vw;
     height: 100vh;
