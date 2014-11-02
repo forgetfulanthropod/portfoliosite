@@ -315,6 +315,7 @@ body {
         @include transition(.5s);
       }
       span {
+        @include font_calc(16px,1.3vw);
         display:inline-block;
         line-height: normal;
         vertical-align: middle;
@@ -391,13 +392,15 @@ body {
 
   #up_arrow {
     display:none;
+    z-index: 10;
     button{
       margin:0;
       position:fixed;
       left:13px; top:5vh;
       width:58px; height:70px;
       @include respond-to(mid) {
-        top:85vh; right:0px; left:auto;
+        top:auto; right:0px; 
+        bottom:22px; left:auto;
       }
       p {
         margin:auto;
