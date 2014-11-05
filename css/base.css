@@ -75,10 +75,12 @@ body #work .grid-3:hover span.hover-text { left: 0; }
 body #work .grid-3:hover::after { opacity: 1; }
 body #about { width: 100vw; height: 100vh; min-height: 500px; display: table-cell; vertical-align: middle; text-align: center; overflow: auto; background: url("../images/cartographer.png"); color: #eee; }
 body #about .content { padding: 20px; text-align: middle; }
-@media (max-width: 750px) { body #about .content { padding: 0; } }
+@media (max-width: 750px) { body #about .content { padding: 0; padding-top: 40px; } }
 body #about .content img { width: 100%; max-width: 800px; }
 body #about .content blockquote { display: inline-block; max-width: 800px; }
+@media (max-width: 750px) { body #about .content blockquote { margin: 5px; } }
 body #contact { width: 100vw; height: 100vh; min-height: 500px; display: table-cell; vertical-align: middle; text-align: center; overflow: auto; background: url("../images/cartographer_inv.png"); }
+@media (max-width: 750px) { body #contact .content { padding-top: 60px; } }
 body #contact .wufoo-form-container { width: 70% !important; padding-left: 30%; background: url("../images/charlie_web.png") no-repeat; background-size: 30%; background-position: left; }
 @media (max-width: 750px) { body #contact .wufoo-form-container { width: 100% !important; background: none; padding-left: 0; } }
 body #up_arrow { display: none; z-index: 10; }

@@ -361,6 +361,7 @@ body {
       text-align:middle;
       @include respond-to(mid) {
           padding:0;
+          padding-top: 40px;
       }
       img {        
         width:100%;
@@ -369,6 +370,9 @@ body {
       blockquote {
         display:inline-block;
         max-width:800px;
+        @include respond-to(mid) {
+          margin:5px;
+        }
       }
     }
   }
@@ -376,6 +380,11 @@ body {
   #contact {
     @include page-div;
     background: url("../images/cartographer_inv.png");
+    @include respond-to(mid) {
+      .content {
+          padding-top:60px;
+      }
+    }
     .wufoo-form-container {
       width:70% !important;
       padding-left:30%;
