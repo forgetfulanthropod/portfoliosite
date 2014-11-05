@@ -150,108 +150,6 @@ body {
       }  
     }
   }
-  #fungroup { 
-    $fungroup-square-min: 420px;
-    position:absolute;
-    left:50%; top:50%;
-    @include transform(translate(-50%,-50%));
-    width:36vw; height:36vw;
-    min-width:$fungroup-square-min; min-height:$fungroup-square-min;
-    @include respond-to(mid) {
-      top:0; left:0;
-      @include transform(none);
-      width:100%; height:600px;
-      min-width:0;
-    }
-    min-width:calc($fungroup-square-min + 1vw); min-height:calc($fungroup-square-min + 1vw);
-    span {
-      position:absolute;
-      width:100%; height:100%;
-      @include transition(3s);
-      left:0; top:0; right:0; bottom:0;
-      border:.25vw solid $main-color;
-      background:$main-bg-color;
-      opacity: .15;
-      @include respond-to(mid){ display:none; }
-      &:last-of-type {
-        opacity:.5;
-        background-color: $main-color;
-        @include border-radius(50%);
-        button {
-          color:white;
-        }
-      }
-    }
-    @for $i from 1 through 9 {
-      & > span:nth-child(#{$i}){
-        @include transform(rotate(($i - 1) * 10deg));
-      }
-      &:hover > span:nth-child(#{$i}){
-        @include transform(rotate(($i - 1) * 10deg + 10deg));
-      }
-    }
-    header {
-      color:white;
-      position:absolute;
-      text-align: center;
-      left:50%;
-      top:50%;
-      min-width:$fungroup-square-min - 50px;
-      width:75%;
-      @include transform(translate(-50%,-60%));
-      @include respond-to(mid) {
-        width: 80vw;
-      }
-      p#name_for_title {
-        font-family: Hollywood;
-        font-size: 9vw;
-        @include font_calc(60px,4vw);
-        color:white;
-        letter-spacing: .6vw;
-        line-height: 1;
-        margin: 0;
-        @include respond-to(mid) {
-          font-size: 22vw;
-        }
-      }
-      h1,h2 {
-        margin:0;
-      }
-      h2 {@include font_calc(16px,.75vw)}
-    }
-    button {
-      color: $main-bg-color;
-      font-weight: bold;
-      position:absolute;
-      bottom: 5vw;
-      left: 50%;
-      @include transform(translateX(-50%));
-      width:11vw; min-width:120px;
-      height:3.6vw; min-height:60px;
-      background-color: $main-color;
-      @include transition(2s);
-      opacity:0;
-      $but-color-hire: #2dae7b;
-      @include respond-to(mid) {
-        opacity:1;
-        background-color: $but-color-hire;
-        height:auto;
-      }
-      &:hover {
-        @include transition($but-hov-time);
-        background-color: darken($main-color,$hover-darken);
-        h2 {
-          color:white;
-        }
-        @include respond-to(mid) {
-          background-color: darken($but-color-hire, $hover-darken);
-        }
-      }
-    }
-    &:hover button {
-      opacity:1;
-    }
-  }
   .content {
     display:inline-block;
     width:80%;
@@ -269,6 +167,111 @@ body {
     @include respond-to(mid) {
       height:600px;
       background:lighten($main-color, 20%);
+      height:auto;
+    }
+    #fungroup { 
+      $fungroup-square-min: 420px;
+      position:absolute;
+      left:50%; top:50%;
+      @include transform(translate(-50%,-50%));
+      width:36vw; height:36vw;
+      min-width:$fungroup-square-min; min-height:$fungroup-square-min;
+      @include respond-to(mid) {
+        position:static;
+        @include transform(none);
+        width:100%; height:auto;
+        min-width:0;
+      }
+      min-width:calc($fungroup-square-min + 1vw); min-height:calc($fungroup-square-min + 1vw);
+      span {
+        position:absolute;
+        width:100%; height:100%;
+        @include transition(3s);
+        left:0; top:0; right:0; bottom:0;
+        border:.25vw solid $main-color;
+        background:$main-bg-color;
+        opacity: .15;
+        @include respond-to(mid){ display:none; }
+        &:last-of-type {
+          opacity:.5;
+          background-color: $main-color;
+          @include border-radius(50%);
+        }
+      }
+      @for $i from 1 through 9 {
+        & > span:nth-child(#{$i}){
+          @include transform(rotate(($i - 1) * 10deg));
+        }
+        &:hover > span:nth-child(#{$i}){
+          @include transform(rotate(($i - 1) * 10deg + 10deg));
+        }
+      }
+      header {
+        color:white;
+        position:absolute;
+        text-align: center;
+        left:50%;
+        top:50%;
+        min-width:$fungroup-square-min - 50px;
+        width:75%;
+        @include transform(translate(-50%,-60%));
+        @include respond-to(mid) {
+          width: 80vw;
+          top:30%;
+          &>div {
+            margin: 0 7.5%;
+          }
+        }
+        p#name_for_title {
+          font-family: Hollywood;
+          font-size: 9vw;
+          @include font_calc(60px,4vw);
+          color:white;
+          letter-spacing: .6vw;
+          line-height: 1;
+          margin: 0;
+          @include respond-to(mid) {
+            font-size: 22vw;
+          }
+        }
+        h1,h2 {
+          margin:0;
+        }
+        h2 {@include font_calc(16px,.75vw)}
+      }
+      button {
+        color: $main-bg-color;
+        font-weight: bold;
+        position:absolute;
+        bottom: 5vw;
+        left: 50%;
+        @include transform(translateX(-50%));
+        width:11vw; min-width:120px;
+        height:3.6vw; min-height:60px;
+        background-color: $main-color;
+        @include transition(2s);
+        opacity:0;
+        $but-color-hire: #2dae7b;
+        @include respond-to(mid) {
+          opacity:1;
+          background-color: $but-color-hire;
+          height:auto;
+          bottom: auto; top: 300px;
+        }
+        &:hover {
+          @include transition($but-hov-time);
+          background-color: darken($main-color,$hover-darken);
+          h2 {
+            color:white;
+          }
+          @include respond-to(mid) {
+            background-color: darken($but-color-hire, $hover-darken);
+          }
+        }
+      }
+      &:hover button {
+        opacity:1;
+      }
     }
   }
   #work {

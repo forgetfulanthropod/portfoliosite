@@ -21,46 +21,46 @@ body nav li button { position: relative; min-width: 85px; }
 body nav li button:after { content: "\A"; position: absolute; left: 100%; top: 0; border-top: 28px solid transparent; border-bottom: 28px solid transparent; border-left: 0px solid rgba(200, 200, 200, 0.8); -webkit-transition: 0.15s; /* For Safari 3.1 to 6.0 */ transition: 0.15s; }
 body nav li:hover button::after { border-left: 20px solid #b8c9d9; }
 @media (max-width: 750px) { body nav li:hover button::after { border: none; } }
-body #fungroup { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 36vw; height: 36vw; min-width: 420px; min-height: 420px; min-width: calc($fungroup-square-min + 1vw); min-height: calc($fungroup-square-min + 1vw); }
-@media (max-width: 750px) { body #fungroup { top: 0; left: 0; -webkit-transform: none; -ms-transform: none; transform: none; width: 100%; height: 600px; min-width: 0; } }
-body #fungroup span { position: absolute; width: 100%; height: 100%; -webkit-transition: 3s; /* For Safari 3.1 to 6.0 */ transition: 3s; left: 0; top: 0; right: 0; bottom: 0; border: 0.25vw solid #333; background: #eee; opacity: .15; }
-@media (max-width: 750px) { body #fungroup span { display: none; } }
-body #fungroup span:last-of-type { opacity: .5; background-color: #333; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
-body #fungroup span:last-of-type button { color: white; }
-body #fungroup > span:nth-child(1) { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
-body #fungroup:hover > span:nth-child(1) { -webkit-transform: rotate(10deg); -ms-transform: rotate(10deg); transform: rotate(10deg); }
-body #fungroup > span:nth-child(2) { -webkit-transform: rotate(10deg); -ms-transform: rotate(10deg); transform: rotate(10deg); }
-body #fungroup:hover > span:nth-child(2) { -webkit-transform: rotate(20deg); -ms-transform: rotate(20deg); transform: rotate(20deg); }
-body #fungroup > span:nth-child(3) { -webkit-transform: rotate(20deg); -ms-transform: rotate(20deg); transform: rotate(20deg); }
-body #fungroup:hover > span:nth-child(3) { -webkit-transform: rotate(30deg); -ms-transform: rotate(30deg); transform: rotate(30deg); }
-body #fungroup > span:nth-child(4) { -webkit-transform: rotate(30deg); -ms-transform: rotate(30deg); transform: rotate(30deg); }
-body #fungroup:hover > span:nth-child(4) { -webkit-transform: rotate(40deg); -ms-transform: rotate(40deg); transform: rotate(40deg); }
-body #fungroup > span:nth-child(5) { -webkit-transform: rotate(40deg); -ms-transform: rotate(40deg); transform: rotate(40deg); }
-body #fungroup:hover > span:nth-child(5) { -webkit-transform: rotate(50deg); -ms-transform: rotate(50deg); transform: rotate(50deg); }
-body #fungroup > span:nth-child(6) { -webkit-transform: rotate(50deg); -ms-transform: rotate(50deg); transform: rotate(50deg); }
-body #fungroup:hover > span:nth-child(6) { -webkit-transform: rotate(60deg); -ms-transform: rotate(60deg); transform: rotate(60deg); }
-body #fungroup > span:nth-child(7) { -webkit-transform: rotate(60deg); -ms-transform: rotate(60deg); transform: rotate(60deg); }
-body #fungroup:hover > span:nth-child(7) { -webkit-transform: rotate(70deg); -ms-transform: rotate(70deg); transform: rotate(70deg); }
-body #fungroup > span:nth-child(8) { -webkit-transform: rotate(70deg); -ms-transform: rotate(70deg); transform: rotate(70deg); }
-body #fungroup:hover > span:nth-child(8) { -webkit-transform: rotate(80deg); -ms-transform: rotate(80deg); transform: rotate(80deg); }
-body #fungroup > span:nth-child(9) { -webkit-transform: rotate(80deg); -ms-transform: rotate(80deg); transform: rotate(80deg); }
-body #fungroup:hover > span:nth-child(9) { -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
-body #fungroup header { color: white; position: absolute; text-align: center; left: 50%; top: 50%; min-width: 370px; width: 75%; -webkit-transform: translate(-50%, -60%); -ms-transform: translate(-50%, -60%); transform: translate(-50%, -60%); }
-@media (max-width: 750px) { body #fungroup header { width: 80vw; } }
-body #fungroup header p#name_for_title { font-family: Hollywood; font-size: 9vw; font-size: -webkit-calc(60px + 4vw); /* Ch <26, Saf 6, BB 10 */ font-size: -moz-calc(60px + 4vw); /* Fx <16 */ font-size: calc(60px + 4vw); /* IE 9+, Fx 16+, Ch 26+ */ color: white; letter-spacing: .6vw; line-height: 1; margin: 0; }
-@media (max-width: 750px) { body #fungroup header p#name_for_title { font-size: 22vw; } }
-body #fungroup header h1, body #fungroup header h2 { margin: 0; }
-body #fungroup header h2 { font-size: -webkit-calc(16px + 0.75vw); /* Ch <26, Saf 6, BB 10 */ font-size: -moz-calc(16px + 0.75vw); /* Fx <16 */ font-size: calc(16px + 0.75vw); /* IE 9+, Fx 16+, Ch 26+ */ }
-body #fungroup button { color: #eee; font-weight: bold; position: absolute; bottom: 5vw; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 11vw; min-width: 120px; height: 3.6vw; min-height: 60px; background-color: #333; -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */ transition: 2s; opacity: 0; }
-@media (max-width: 750px) { body #fungroup button { opacity: 1; background-color: #2dae7b; height: auto; } }
-body #fungroup button:hover { -webkit-transition: 0.15s; /* For Safari 3.1 to 6.0 */ transition: 0.15s; background-color: #0d0d0d; }
-body #fungroup button:hover h2 { color: white; }
-@media (max-width: 750px) { body #fungroup button:hover { background-color: #1d7150; } }
-body #fungroup:hover button { opacity: 1; }
 body .content { display: inline-block; width: 80%; min-height: 70%; max-width: 1200px; }
 @media (max-width: 750px) { body .content { width: 97%; } }
 body #landing { color: #333; width: 100vw; height: 100vh; min-height: 500px; display: table-cell; vertical-align: middle; text-align: center; overflow: auto; background: url("../images/hw-bg.jpg"); background-size: cover; }
-@media (max-width: 750px) { body #landing { height: 600px; background: #666666; } }
+@media (max-width: 750px) { body #landing { height: 600px; background: #666666; height: auto; } }
+body #landing #fungroup { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 36vw; height: 36vw; min-width: 420px; min-height: 420px; min-width: calc($fungroup-square-min + 1vw); min-height: calc($fungroup-square-min + 1vw); }
+@media (max-width: 750px) { body #landing #fungroup { position: static; -webkit-transform: none; -ms-transform: none; transform: none; width: 100%; height: auto; min-width: 0; } }
+body #landing #fungroup span { position: absolute; width: 100%; height: 100%; -webkit-transition: 3s; /* For Safari 3.1 to 6.0 */ transition: 3s; left: 0; top: 0; right: 0; bottom: 0; border: 0.25vw solid #333; background: #eee; opacity: .15; }
+@media (max-width: 750px) { body #landing #fungroup span { display: none; } }
+body #landing #fungroup span:last-of-type { opacity: .5; background-color: #333; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+body #landing #fungroup > span:nth-child(1) { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
+body #landing #fungroup:hover > span:nth-child(1) { -webkit-transform: rotate(10deg); -ms-transform: rotate(10deg); transform: rotate(10deg); }
+body #landing #fungroup > span:nth-child(2) { -webkit-transform: rotate(10deg); -ms-transform: rotate(10deg); transform: rotate(10deg); }
+body #landing #fungroup:hover > span:nth-child(2) { -webkit-transform: rotate(20deg); -ms-transform: rotate(20deg); transform: rotate(20deg); }
+body #landing #fungroup > span:nth-child(3) { -webkit-transform: rotate(20deg); -ms-transform: rotate(20deg); transform: rotate(20deg); }
+body #landing #fungroup:hover > span:nth-child(3) { -webkit-transform: rotate(30deg); -ms-transform: rotate(30deg); transform: rotate(30deg); }
+body #landing #fungroup > span:nth-child(4) { -webkit-transform: rotate(30deg); -ms-transform: rotate(30deg); transform: rotate(30deg); }
+body #landing #fungroup:hover > span:nth-child(4) { -webkit-transform: rotate(40deg); -ms-transform: rotate(40deg); transform: rotate(40deg); }
+body #landing #fungroup > span:nth-child(5) { -webkit-transform: rotate(40deg); -ms-transform: rotate(40deg); transform: rotate(40deg); }
+body #landing #fungroup:hover > span:nth-child(5) { -webkit-transform: rotate(50deg); -ms-transform: rotate(50deg); transform: rotate(50deg); }
+body #landing #fungroup > span:nth-child(6) { -webkit-transform: rotate(50deg); -ms-transform: rotate(50deg); transform: rotate(50deg); }
+body #landing #fungroup:hover > span:nth-child(6) { -webkit-transform: rotate(60deg); -ms-transform: rotate(60deg); transform: rotate(60deg); }
+body #landing #fungroup > span:nth-child(7) { -webkit-transform: rotate(60deg); -ms-transform: rotate(60deg); transform: rotate(60deg); }
+body #landing #fungroup:hover > span:nth-child(7) { -webkit-transform: rotate(70deg); -ms-transform: rotate(70deg); transform: rotate(70deg); }
+body #landing #fungroup > span:nth-child(8) { -webkit-transform: rotate(70deg); -ms-transform: rotate(70deg); transform: rotate(70deg); }
+body #landing #fungroup:hover > span:nth-child(8) { -webkit-transform: rotate(80deg); -ms-transform: rotate(80deg); transform: rotate(80deg); }
+body #landing #fungroup > span:nth-child(9) { -webkit-transform: rotate(80deg); -ms-transform: rotate(80deg); transform: rotate(80deg); }
+body #landing #fungroup:hover > span:nth-child(9) { -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
+body #landing #fungroup header { color: white; position: absolute; text-align: center; left: 50%; top: 50%; min-width: 370px; width: 75%; -webkit-transform: translate(-50%, -60%); -ms-transform: translate(-50%, -60%); transform: translate(-50%, -60%); }
+@media (max-width: 750px) { body #landing #fungroup header { width: 80vw; top: 30%; }
+  body #landing #fungroup header > div { margin: 0 7.5%; } }
+body #landing #fungroup header p#name_for_title { font-family: Hollywood; font-size: 9vw; font-size: -webkit-calc(60px + 4vw); /* Ch <26, Saf 6, BB 10 */ font-size: -moz-calc(60px + 4vw); /* Fx <16 */ font-size: calc(60px + 4vw); /* IE 9+, Fx 16+, Ch 26+ */ color: white; letter-spacing: .6vw; line-height: 1; margin: 0; }
+@media (max-width: 750px) { body #landing #fungroup header p#name_for_title { font-size: 22vw; } }
+body #landing #fungroup header h1, body #landing #fungroup header h2 { margin: 0; }
+body #landing #fungroup header h2 { font-size: -webkit-calc(16px + 0.75vw); /* Ch <26, Saf 6, BB 10 */ font-size: -moz-calc(16px + 0.75vw); /* Fx <16 */ font-size: calc(16px + 0.75vw); /* IE 9+, Fx 16+, Ch 26+ */ }
+body #landing #fungroup button { color: #eee; font-weight: bold; position: absolute; bottom: 5vw; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 11vw; min-width: 120px; height: 3.6vw; min-height: 60px; background-color: #333; -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */ transition: 2s; opacity: 0; }
+@media (max-width: 750px) { body #landing #fungroup button { opacity: 1; background-color: #2dae7b; height: auto; bottom: auto; top: 300px; } }
+body #landing #fungroup button:hover { -webkit-transition: 0.15s; /* For Safari 3.1 to 6.0 */ transition: 0.15s; background-color: #0d0d0d; }
+body #landing #fungroup button:hover h2 { color: white; }
+@media (max-width: 750px) { body #landing #fungroup button:hover { background-color: #1d7150; } }
+body #landing #fungroup:hover button { opacity: 1; }
 body #work { width: 100vw; height: 100vh; min-height: 500px; display: table-cell; vertical-align: middle; text-align: center; overflow: auto; background: url("../images/cartographer_inv.png"); padding: 40px; }
 body #work h1 { font-size: 200%; }
 body #work .grid-2:nth-child(1)::before { content: "\A"; background: url("../images/icons/CSS.svg") no-repeat; background-size: contain; position: absolute; left: 0; top: 0; width: 100px; height: 100px; }
