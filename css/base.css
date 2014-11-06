@@ -49,14 +49,14 @@ body #landing #fungroup:hover > span:nth-child(8) { -webkit-transform: rotate(80
 body #landing #fungroup > span:nth-child(9) { -webkit-transform: rotate(80deg); -ms-transform: rotate(80deg); transform: rotate(80deg); }
 body #landing #fungroup:hover > span:nth-child(9) { -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
 body #landing #fungroup header { color: white; position: absolute; text-align: center; left: 50%; top: 50%; min-width: 370px; width: 75%; -webkit-transform: translate(-50%, -60%); -ms-transform: translate(-50%, -60%); transform: translate(-50%, -60%); }
-@media (max-width: 750px) { body #landing #fungroup header { width: 80vw; top: 30%; }
+@media (max-width: 750px) { body #landing #fungroup header { width: 80vw; top: 80px; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); }
   body #landing #fungroup header > div { margin: 0 7.5%; } }
 body #landing #fungroup header p#name_for_title { font-family: Hollywood; font-size: 9vw; font-size: -webkit-calc(60px + 4vw); /* Ch <26, Saf 6, BB 10 */ font-size: -moz-calc(60px + 4vw); /* Fx <16 */ font-size: calc(60px + 4vw); /* IE 9+, Fx 16+, Ch 26+ */ color: white; letter-spacing: .6vw; line-height: 1; margin: 0; }
 @media (max-width: 750px) { body #landing #fungroup header p#name_for_title { font-size: 22vw; } }
 body #landing #fungroup header h1, body #landing #fungroup header h2 { margin: 0; }
 body #landing #fungroup header h2 { font-size: -webkit-calc(16px + 0.75vw); /* Ch <26, Saf 6, BB 10 */ font-size: -moz-calc(16px + 0.75vw); /* Fx <16 */ font-size: calc(16px + 0.75vw); /* IE 9+, Fx 16+, Ch 26+ */ }
 body #landing #fungroup button { color: #eee; font-weight: bold; position: absolute; bottom: 5vw; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 11vw; min-width: 120px; height: 3.6vw; min-height: 60px; background-color: #333; -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */ transition: 2s; opacity: 0; }
-@media (max-width: 750px) { body #landing #fungroup button { opacity: 1; background-color: #2dae7b; height: auto; bottom: auto; top: 300px; } }
+@media (max-width: 750px) { body #landing #fungroup button { opacity: 1; background-color: #2dae7b; height: auto; bottom: auto; top: 330px; } }
 body #landing #fungroup button:hover { -webkit-transition: 0.15s; /* For Safari 3.1 to 6.0 */ transition: 0.15s; background-color: #0d0d0d; }
 body #landing #fungroup button:hover h2 { color: white; }
 @media (max-width: 750px) { body #landing #fungroup button:hover { background-color: #1d7150; } }

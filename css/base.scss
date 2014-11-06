@@ -217,7 +217,8 @@ body {
         @include transform(translate(-50%,-60%));
         @include respond-to(mid) {
           width: 80vw;
-          top:30%;
+          top: 80px;
+          @include transform(translate(-50%,0));
           &>div {
             margin: 0 7.5%;
           }
@@ -256,7 +257,7 @@ body {
           opacity:1;
           background-color: $but-color-hire;
           height:auto;
-          bottom: auto; top: 300px;
+          bottom: auto; top: 330px;
         }
         &:hover {
           @include transition($but-hov-time);
