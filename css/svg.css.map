@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,SAAU;EACT,OAAO,EAAC,IAAI",
+"sources": ["svg.scss"],
+"names": [],
+"file": "svg.css"
+}
