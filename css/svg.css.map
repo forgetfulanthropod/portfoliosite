@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,GAAI;EACH,IAAI,EAAE,KAAK",
+"mappings": "AAEA,aAAc;EACb,IAAI,EAAE,eAAe;;AAEtB,aAAc;EACb,IAAI,EAAE,gBAAgB;;AAEvB,aAAc;EACb,IAAI,EAAE,cAAc;;AAErB,aAAa;EACZ,IAAI,EAAE,mBAAmB;;AAE1B,aAAc;EACb,IAAI,EAAE,eAAe;;AAEtB,aAAa;EACZ,IAAI,EAAE,oBAAoB",
 "sources": ["svg.scss"],
 "names": [],
 "file": "svg.css"

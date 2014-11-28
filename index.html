@@ -14,39 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 	<script src="scripts/jquery-2.1.1.min.js" type="text/javascript"></script> 
-
-	<!-- JavaScript -->
-	<script src="scripts/wufoo.js"></script>
-	<!--[if lt IE 10]>
-	<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-  	<script type="text/javascript">
-  		//code below hijacks nav links for smooth scrolling
-      $(document).ready(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      });
-      //code below hides upward nav arrow
-      $(document).scroll(function() {
-        if (window.pageYOffset > $(window).height()) {
-          $('#up_arrow').css('display','block');
-        }
-        else {
-          $('#up_arrow').css('display','none');
-        }
-      });
-  	</script>
-	<!-- End of Javascript -->
 </head>
 <body>
   <nav>
@@ -126,27 +93,71 @@
               <h1>Technologies</h1>
           </li>
           <img class="grid-1" src="images/icons/css.svg" />
-    	  <img class="grid-1" src="images/icons/html.svg" />
-    	  <img class="grid-1" src="images/icons/js.svg" />
-    	  <img class="grid-1" src="images/icons/sass.svg" />
-    	  <img class="grid-1" src="images/icons/jquery.svg" />
-    	  <img class="grid-1" src="images/icons/bootstrap.svg" />
-    	  <img class="grid-1" src="images/icons/github.svg" />
-    	  <img class="grid-1" src="images/icons/php.svg" />
-    	  <img class="grid-1" src="images/icons/wordpress.svg" />
-    	  <img class="grid-1" src="images/icons/tumblr.svg" />
-    	  <img class="grid-1" src="images/icons/responsive.svg" />
-    	  <img class="grid-1" src="images/icons/svg.svg" />
+	    	  <img class="grid-1" src="images/icons/html.svg" />
+	    	  <img class="grid-1" src="images/icons/js.svg" />
+	    	  <img class="grid-1" src="images/icons/sass.svg" />
+	    	  <img class="grid-1" src="images/icons/jquery.svg" />
+	    	  <img class="grid-1" src="images/icons/bootstrap.svg" />
+	    	  <img class="grid-1" src="images/icons/github.svg" />
+	    	  <img class="grid-1" src="images/icons/php.svg" />
+	    	  <img class="grid-1" src="images/icons/wordpress.svg" />
+	    	  <img class="grid-1" src="images/icons/tumblr.svg" />
+	    	  <img class="grid-1" src="images/icons/responsive.svg" />
+	    	  <img class="grid-1" src="images/icons/svg.svg" />
         </ul>			 	
     </div>
   </section>
   <hr/>
   <section id="about">
     <div class="content">
-      <object type="image/svg+xml" data="images/map.svg" id="us_map">
-        Map of US with my recent previous residences marked - cities of the U.S. including L.A. and N.Y.C. 
-        <!-- fallback image in CSS -->
-      </object>
+      <div id="us_map_wrap">
+        <object type="image/svg+xml" data="images/map.svg" id="us_map">
+          Map of US with my recent previous residences marked - cities of the U.S. including L.A. and N.Y.C. 
+        </object> 
+        <div class="overlay">
+          <div class="dialog" id="ky_dialog">
+            <button class="closer">x</button>
+            <h3>Lexington, Kentucky</h3>
+            <time>1992</time>-<time>2014</time>
+            <p>I grew up in a small town in KY.  I attended U of K after high school with a major of Electrical Engineering.  Working hard and getting lucky opened the door to a series of internships around the country.</p>
+          </div>
+          <div class="dialog" id="co_dialog">
+            <button class="closer">x</button>
+            <h3>Boulder, Colorado</h3>
+            <time>May 2011</time><time>August 2011</time>
+            <p>I interned in Electrical Engineering for EETREX, where I got my hands dirty with building from schematics, making schematics, and doing data analysis on lithium-ion cells.  I made a big report at the end, concluding that the cells in use were often unreliable and even unsafe.</p>
+            <p>Colorado was my first flight outside of the nest.  I found that  a new culture could take over, if you let it.  I got into hiking, skiing and rowing in my free time, learing to enjoy the great outdoors and to live healthy.</p>
+          </div>
+          <div class="dialog" id="oh_dialog">
+            <button class="closer">x</button>
+            <h3>Cincinatti, Ohio</h3>
+            <time>May 2012</time>-<time>August 2012</time>
+            <p>I got into low level programming and some GUI software at GE Aviation, a branch of Edison's 150+ year old company.  I was part of a team responsible for testing jet enginges via custom sensors and electronic systems.  A new system was under development at my time there, and I coded up a prototype GUI along with some basic embedded software.</p>
+            <p>I found a local Wakeboarding park and a surfing ride which was skill-based at the local waterpark.  I learned a lot about midwestern sensibilities in my time there.</p>
+          </div>
+          <div class="dialog" id="ny_dialog">
+            <button class="closer">x</button>
+            <h3>New York, New York</h3>
+            <time>September 2012</time>-<time>December 2012</time>
+            <p>I found an internship in operations at a small web start-up called Bombfell which was based in Manhattan.  We were serving over 1000 customers from day 1, and I learned the nitty gritty details of how start-ups operate.  I was introduced to web development during this job, and I started learning front-end.</p>
+            <p>The city was amazing for me.  My eyes were opened to the world of activity that had been just 1000 miles away from me for my whole life.  I developed a new framework for thinking about opportunity, and I am eternally grateful to the friends an co-workers that I had there.</p>
+          </div>
+          <div class="dialog" id="fl_dialog">
+            <button class="closer">x</button>
+            <h3>Jacksonville, Florida</h3>
+            <time>May 2013</time>-<time>August 2013</time>
+            <p>I went to work for an electronics-specialized branch of GE Aviation as a circuit design intern.  I built models of circuits for the first half of the summer, and for the second half I built circuits with a bread board.  I loved the empowerment to create.</p>
+            <p>I had the chance to get an apartment on the beach with a few of my intern cohorts.  So I bought a big surf board during my first week there and slowly learned to catch waves.  Lots of time was spent on Jax Beach :)</p>
+          </div>
+          <div class="dialog" id="ca_dialog">
+            <button class="closer">x</button>
+            <h3>Los Angeles, California</h3>
+            <time>May 2014</time>-<time>(Present)</time>
+            <p>I moved here seeking experience and without a plan, right after graduation in May.  The city has been very stimulating, and I've met some awesome, crazy people here so far.</p>
+          </div>
+        </div>
+
+      </div>
 	    <blockquote>
   			<h2>I've been moving around a bit for the past few years...</h2>
   			<p>I've interned in aviation, power electronics for <abbr title="Plugin Hybrid Electric Vehicles">PHEVs</abbr>, and in the web startup space.</p>
@@ -183,4 +194,100 @@
     </div>
   </section>
 </body>
+
+<!-- JavaScript -->
+<script src="scripts/wufoo.js"></script>
+<!--[if lt IE 10]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+		//code below hijacks nav links for smooth scrolling
+  $(document).ready(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  })
+  //code below hides upward nav arrow
+  .scroll(function() {
+    if (window.pageYOffset > $(window).height()) {
+      $('#up_arrow').css('display','block');
+    }
+    else {
+      $('#up_arrow').css('display','none');
+    }
+  });
+
+  $(document).ready(function(){
+    var a = document.getElementById("us_map");
+
+    //it's important to add an load event listener to the object, as it will load the svg doc asynchronously
+    a.addEventListener("load",function(){
+        var svgDoc = a.contentDocument; //get the inner DOM of alpha.svg
+        var svgRoot  = svgDoc.documentElement;
+
+        //now we can query stuff with jquery like this
+        //note that we pass in the svgRoot as the context node!
+        $("#ky",svgRoot).click(function(){
+          $(".overlay").css("display","block")
+          .find("#ky_dialog").css("display","block")
+          .find(".closer").click(function(){
+            $(this).parent().css("display","none")
+            .parent().css("display","none");
+          })
+        });
+        $("#co",svgRoot).click(function(){
+          $(".overlay").css("display","block")
+          .find("#co_dialog").css("display","block")
+          .find(".closer").click(function(){
+            $(this).parent().css("display","none")
+            .parent().css("display","none");
+          })
+        });
+        $("#oh",svgRoot).click(function(){
+          $(".overlay").css("display","block")
+          .find("#oh_dialog").css("display","block")
+          .find(".closer").click(function(){
+            $(this).parent().css("display","none")
+            .parent().css("display","none");
+          })
+        });
+        $("#ny",svgRoot).click(function(){
+          $(".overlay").css("display","block")
+          .find("#ny_dialog").css("display","block")
+          .find(".closer").click(function(){
+            $(this).parent().css("display","none")
+            .parent().css("display","none");
+          })
+        });
+        $("#fl",svgRoot).click(function(){
+          $(".overlay").css("display","block")
+          .find("#fl_dialog").css("display","block")
+          .find(".closer").click(function(){
+            $(this).parent().css("display","none")
+            .parent().css("display","none");
+          })
+        });
+        $("#ca",svgRoot).click(function(){
+          $(".overlay").css("display","block")
+          .find("#ca_dialog").css("display","block")
+          .find(".closer").click(function(){
+            $(this).parent().css("display","none")
+            .parent().css("display","none");
+          })
+        });
+      },false);
+    })
+
+</script>
+<!-- End of Javascript -->
+
 </html>

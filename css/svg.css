@@ -1,4 +1,19 @@
-#CO {
-  fill: green; }
+#ky:hover #KY {
+  fill: blue !important; }
+
+#co:hover #CO {
+  fill: green !important; }
+
+#oh:hover #OH {
+  fill: red !important; }
+
+#ny:hover #NY {
+  fill: DarkBlue !important; }
+
+#fl:hover #FL {
+  fill: Gold !important; }
+
+#ca:hover #CA {
+  fill: GoldenRod !important; }
 
 /*# sourceMappingURL=svg.css.map */

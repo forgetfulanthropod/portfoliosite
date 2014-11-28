@@ -45,15 +45,6 @@ $break-mid: 750px;
   text-align:center;
   overflow:auto;
 }
-@mixin noselect {
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-
-  /* No support for these yet, use at own risk */
-  -o-user-select: none;
-  user-select: none;  
-}
 @mixin respond-to($media) {
   @if $media == mid {
     @media screen and (max-width: $break-mid){ @content; }
@@ -81,10 +72,6 @@ body {
     border:none;
     background:$button-color;
     @include transition($but-hov-time);
-    @include noselect;
-    &>* {
-      @include noselect;
-    }
   }
   button:hover {
     background:$hover-color;
@@ -92,7 +79,7 @@ body {
   button:focus {
     outline:none;
   }
-  h1, h2, h3, li, p, span, div {
+  * {
     @include selection($main-color,$main-bg-color);
   }
   h1 {
@@ -134,6 +121,7 @@ nav {
     button {
       position:relative;
       min-width:85px;
+      height: 56px;
     }
     button:after {
       content:"\A";
@@ -429,6 +417,42 @@ nav {
       @include respond-to(mid) {
         margin:5px;
       }
+    }
+  }
+}
+#us_map_wrap {
+  .overlay {
+    position:fixed;
+    top: 0px; right: 0px; bottom: 0px; left: 0px;
+    text-align: center;
+    background: rgba(0,0,0,.7);
+    z-index: 99;
+    display: none;
+    .dialog {
+      width: 55%;
+      padding: 30px;
+      position: absolute;
+      top: 50%; left: 50%;
+      @include transform(translate(-50%,-50%));
+      background: $main-bg-color;
+      color: $main-color;
+      display:none;
+    }
+    .dialog::before {
+      content: "";
+      position: absolute;
+      top: 4px; right: 8px;
+      width: 25px; height: 25px;
+      background: lighten($main-color, 30%);
+    }
+    .closer {
+      font-size:20px;
+      font-weight:bold;
+      position:absolute;
+      top:2px;right:10px; 
+      background:$main-color;
+      color:$main-bg-color;
+      width:25px; height:25px;
     }
   }
 }
