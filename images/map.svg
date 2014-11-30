@@ -9,8 +9,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    alt="Map of US with places I've lived marked on it - cities of the U.S. including L.A. and N.Y.C."
    version="1.1"
-   width="600"
-   height="379.202"
+   viewBox="0 0 600 380"
    id="us_map"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="map.svg">
