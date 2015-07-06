@@ -291,7 +291,7 @@ nav {
         transform: translate(-50%, 0); }
         #header_geometry header > div {
           margin: 0 7.5%; } }
-    #header_geometry header p#name_for_title {
+    #header_geometry header #name_for_title {
       font-family: Hollywood;
       font-size: 9vw;
       font-size: -webkit-calc(60px + 4vw);
@@ -305,7 +305,7 @@ nav {
       line-height: 1;
       margin: 0; }
       @media screen and (max-width: 750px) {
-        #header_geometry header p#name_for_title {
+        #header_geometry header #name_for_title {
           font-size: 22vw; } }
     #header_geometry header h1, #header_geometry header h2 {
       margin: 0; }
@@ -534,7 +534,7 @@ nav {
     width: 70% !important;
     padding-left: 30%;
     background: url("../images/charlie_web.png") no-repeat;
-    background-size: 30%;
+    background-size: 25%;
     background-position: left; }
     @media screen and (max-width: 750px) {
       #contact .wufoo-form-container {

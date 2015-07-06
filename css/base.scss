@@ -264,7 +264,7 @@ nav {
         margin: 0 7.5%;
       }
     }
-    p#name_for_title {
+    #name_for_title {
       font-family: Hollywood;
       font-size: 9vw;
       @include font_calc(60px,4vw);
@@ -471,7 +471,7 @@ nav {
     width:70% !important;
     padding-left:30%;
     background:url("../images/charlie_web.png") no-repeat;
-    background-size: 30%;
+    background-size: 25%;
     background-position: left;
     @include respond-to(mid) {
       width:100% !important;
