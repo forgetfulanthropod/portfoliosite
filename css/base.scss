@@ -60,40 +60,48 @@ body {
   font-family: $main-font;
   background-color:$main-bg-color;
   margin:0;
-  a {
-    text-decoration:none;
-    color: $main-color;
-    :hover {
-      @extend a;
-    }
+}
+a {
+  text-decoration:none;
+  color: $main-color;
+  &:hover {
+    @extend a;
   }
-  button {
-    font-family:$main-font;
-    border:none;
-    background:$button-color;
-    @include transition($but-hov-time);
-  }
-  button:hover {
-    background:$hover-color;
-  }
-  button:focus {
-    outline:none;
-  }
-  * {
-    @include selection($main-color,$main-bg-color);
-  }
-  h1 {
-    font-weight:lighter;
-  }
-  h2 {
-     font-weight:normal;
-  }
-  hr {
-    margin:0;
-  }
-  ul {
-    list-style-type:none;
-    padding:0;
+}
+button {
+  font-family:$main-font;
+  border:none;
+  background:$button-color;
+  @include transition($but-hov-time);
+}
+button:hover {
+  background:$hover-color;
+}
+button:focus {
+  outline:none;
+}
+* {
+  @include selection($main-color,$main-bg-color);
+}
+h1 {
+  font-weight:lighter;
+}
+h2 {
+   font-weight:normal;
+}
+hr {
+  margin:0;
+}
+ul {
+  list-style-type:none;
+  padding:0;
+}
+.text-center {
+  text-align: center;
+}
+.show-for-medium-up {
+  @include respond-to(mid) {
+    display: none;
   }
 }
 //----------------- Start of navigation ----------
