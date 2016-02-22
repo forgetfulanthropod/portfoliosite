@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <script src="https://fb.me/react-0.13.3.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+    <!-- ReactFire -->
+    <script src="https://cdn.firebase.com/libs/reactfire/0.5.1/reactfire.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    <style type="text/css">
+      body {
+        font-family: Raleway, sans-serif;
+      }
+      th,
+      [class*="vote-"] {
+        padding: 5px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .open-bottom {
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+      }
+      .open-top {
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+      }
+      .open-right {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+      }
+      .voter-name {
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+        color: #fff;
+      }
+      .voter-name:after {
+        width: 0;
+        height: 0;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        border-left: 60px solid #008000;
+      }
+      [class*="vote-"] {
+        color: rgba(0,0,0,0);
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        outline-offset: -1px;
+        outline: 1px solid rgba(0,0,0,0.2);
+        box-sizing: border-box;
+      }
+      .vote-0 {
+        background: #f00;
+      }
+      .vote-1 {
+        background: #fdd017;
+      }
+      .vote-2 {
+        background: #008000;
+      }
+      .vote-3 {
+        background: #800080;
+      }
+      .pick-0 {
+        background: #f00;
+      }
+      .pick-1 {
+        background: #fdd017;
+      }
+      .pick-2 {
+        background: #008000;
+      }
+      .pick-3 {
+        background: #800080;
+      }
+      input {
+        width: 100%;
+        min-width: 115px;
+        height: 100%;
+        padding: 0 5px;
+        font-weight: bolder;
+      }
+      .glyphicon {
+        color: #fff;
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+      }
+      .text-center,
+      .center-children {
+        text-align: center;
+      }
+      .center-children>* {
+        display: inline-block;
+      }
+      .table-container {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .submit-button {
+        background: #5cb85c;
+        border: none;
+        color: #fff;
+        font-size: 2.5em;
+        font-weight: bold;
+        padding: 10px 20px;
+      }
+      .edit-votes-btn,
+      .delete-votes-btn {
+        color: #888;
+      }
+    </style> 
+  </head>
+  <body>
+    <h2>Choose your available dates.</h2>
+    <br />
+    <div id="datePicker"></div>
+    <br />
+    <br />
+    <br />
+  </body>
+  <script src="../assets/js/scheduler.js"></script>
+
+</html>
